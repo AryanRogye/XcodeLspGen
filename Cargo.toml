@@ -1,0 +1,18 @@
+[package]
+name = "xcode_lsp_gen"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "XcodeLspGen"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+walkdir = "2"
+which = "6"
+
+ratatui = "0.30.0"
+crossterm = "0.29.0"
+ctrlc = "3"
